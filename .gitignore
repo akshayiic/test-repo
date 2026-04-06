@@ -1,17 +1,17 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-venv/
-env/
-.venv
-
 # Node
 node_modules/
 npm-debug.log
 yarn-error.log
+package-lock.json
+
+# Testing
+coverage/
+*.lcov
+
+# Environment
+.env
+.env.local
+.env.*.local
 
 # IDE
 .vscode/
