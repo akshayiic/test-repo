@@ -51,7 +51,11 @@ describe('Calculator', () => {
             expect(divide(5, 2)).toBe(2.5);
         });
 
-        // TODO: Test division by zero handling when implemented
+        // TEST: Expose division by zero issue - CodeRabbit should catch this
+        test('should throw error for division by zero', () => {
+            expect(() => divide(10, 0)).toThrow();
+            expect(() => divide(5, 0)).toThrow('Cannot divide by zero');
+        });
     });
 
     describe('factorial', () => {
