@@ -65,11 +65,17 @@ function power(base, exp) {
     return result;
 }
 
+// TEST: Function without JSDoc - CodeRabbit should catch this
+function squareRoot(n) {
+    return Math.sqrt(n);
+}
+
 module.exports = {
     add,
     subtract,
     multiply,
     divide,
     factorial,
-    power
+    power,
+    squareRoot
 };
